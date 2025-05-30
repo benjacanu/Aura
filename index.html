@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IAuralink</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: 'Outfit', sans-serif; background-color: white; }
+    header {
+      background-color: #0d0d0d;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 999;
+    }
+    .brand {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.2;
+    }
+    .brand h1 {
+      margin: 0;
+      font-size: 1.5rem;
+      background: linear-gradient(to right, #03C4C4, #093B6F);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .brand small {
+      color: white;
+      font-size: 0.8rem;
+    }
+    nav {
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      flex: 1;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.95rem;
+      transition: all 0.3s ease;
+    }
+    nav a:hover {
+      text-decoration: underline;
+      transform: scale(1.05);
+    }
+    .translate-btn {
+      background: #03C4C4;
+      border: none;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-left: 1rem;
+      margin-right: 2rem !important;
+    }
+    .hero {
+      padding: 9rem 2rem 4rem;
+      text-align: center;
+      background: linear-gradient(to bottom, #61a5c2, #f6e27a);
+      color: #1a1a1a;
+    }
+    .hero h1 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      max-width: 800px;
+      margin: auto;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 1rem auto;
+    }
+    section {
+      padding: 6rem 2rem;
+      text-align: center;
+    }
+    section h2 {
+      font-size: 2rem;
+      color: #0d0d0d;
+    }
+    .card {
+      max-width: 600px;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <h1>IAuralink</h1>
+      <small>Automatiza. Conecta. Escala.</small>
+    </div>
+    <nav>
+      <a href="#hero">INICIO</a>
+      <a href="#services">SERVICIOS</a>
+      <a href="#feedback">CLIENTES</a>
+      <a href="#contact">CONTACTO</a>
+    </nav>
+    <button class="translate-btn" onclick="switchLanguage()" id="langToggle">ENGLISH</button>
+  </header>
+
+  <section class="hero" id="hero">
+    <h1>Nos enfocamos en aumentar la visibilidad de nuestros clientes mediante herramientas inteligentes</h1>
+    <p>IAuralink es una empresa especializada en ayudar a gestionar la presencia digital de nuestros clientes en redes sociales.</p>
+    <p>¡Nuestro objetivo es que tu negocio esté presente, automatizado y en constante crecimiento!</p>
+  </section>
+
+  <section id="services">
+    <h2>Servicios</h2>
+    <div class="card"><h3>Diseño Web</h3><p>Desarrollamos sitios modernos y responsivos para tu negocio.</p></div>
+    <div class="card"><h3>Automatización + Chatbot</h3><p>Conectamos tus formularios y chat con WhatsApp y correo.</p></div>
+    <div class="card"><h3>Gestión de Redes Sociales</h3><p>Publicaciones mensuales, diseño visual y análisis de engagement.</p></div>
+  </section>
+
+  <section id="feedback">
+    <h2>Clientes</h2>
+    <div class="card"><p>“IAuralink transformó completamente nuestra visibilidad online. Excelente servicio.”</p><strong>- Sofía, Santiago</strong></div>
+    <div class="card"><p>“Desde que usamos su automatización, duplicamos nuestros clientes.”</p><strong>- Matías, Valparaíso</strong></div>
+  </section>
+
+<section id="contact" style="background-color: #0d0d0d; color: white; padding: 6rem 2rem;">
+  <div style="max-width: 1100px; margin: 0 auto; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1 1 250px; padding-right: 2rem;">
+      <h3 style="display: flex; align-items: center; gap: 1rem;">SÍGUENOS
+        <a href="#" title="LinkedIn" style="transition: transform 0.3s;"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/linkedin.svg" alt="LinkedIn" width="20" style="filter: invert(1);" onmouseover="this.style.transform='scale(1.3)'" onmouseout="this.style.transform='scale(1)'"></a>
+        <a href="#" title="X (Twitter)" style="transition: transform 0.3s;"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/x.svg" alt="X" width="20" style="filter: invert(1);" onmouseover="this.style.transform='scale(1.3)'" onmouseout="this.style.transform='scale(1)'"></a>
+        <a href="#" title="Instagram" style="transition: transform 0.3s;"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/instagram.svg" alt="Instagram" width="20" style="filter: invert(1);" onmouseover="this.style.transform='scale(1.3)'" onmouseout="this.style.transform='scale(1)'"></a>
+        <a href="#" title="WhatsApp" style="transition: transform 0.3s;"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/whatsapp.svg" alt="WhatsApp" width="20" style="filter: invert(1);" onmouseover="this.style.transform='scale(1.3)'" onmouseout="this.style.transform='scale(1)'"></a>
+      </h3>
+      <p><strong>Teléfono:</strong> +56 9 1234 5678</p>
+      <p><strong>Correo:</strong> contacto@iauralink.com</p>
+      <div style="margin-top: 1rem;">
+        <button style="background-color: #03C4C4; color: white; border: none; padding: 0.6rem 1.2rem; font-weight: bold; border-radius: 6px; cursor: pointer;">Chat bot</button>
+      </div>
+    </div>
+    <div style="flex: 1 1 600px; background-color: #03C4C4; padding: 2rem; border-radius: 8px;">
+      <h2 style="text-transform: uppercase; color: white; text-align: left;">Formulario de Contacto</h2>
+      <form style="margin-top: 1rem;">
+        <input type="text" placeholder="Ingrese su nombre" style="width: 100%; margin-bottom: 1rem; padding: 0.8rem; border: none; border-radius: 4px;">
+        <input type="email" placeholder="Ingrese un correo válido" style="width: 100%; margin-bottom: 1rem; padding: 0.8rem; border: none; border-radius: 4px;">
+        <textarea placeholder="Escriba su mensaje" rows="4" style="width: 100%; margin-bottom: 1rem; padding: 0.8rem; border: none; border-radius: 4px;"></textarea>
+        <label for="servicio" style="display: block; margin-bottom: 0.5rem; font-weight: bold; color: white;">Selecciona un servicio</label>
+        <select id="servicio" name="servicio" style="width: 100%; margin-bottom: 1rem; padding: 0.8rem; border: none; border-radius: 4px;">
+          <option value="web">Diseño Web</option>
+          <option value="chatbot">Automatización + Chatbot</option>
+          <option value="redes">Gestión de Redes Sociales</option>
+        </select>
+        <button type="submit" style="background-color: white; color: #03C4C4; border: none; padding: 0.8rem 1.5rem; font-weight: bold; border-radius: 4px; cursor: pointer;">ENVIAR</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section id="review-form" style="padding: 4rem 2rem; background: #f9f9f9;">
+  <div style="max-width: 700px; margin: 0 auto; background: white; border-radius: 10px; padding: 2rem; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+    <h3 style="margin-bottom: 1rem;">Comparte tu experiencia</h3>
+    <form>
+      <input type="text" placeholder="Tu nombre" style="width: 100%; padding: 0.8rem; margin-bottom: 1rem; border-radius: 6px; border: 1px solid #ccc;">
+      <input type="text" placeholder="Ciudad o país" style="width: 100%; padding: 0.8rem; margin-bottom: 1rem; border-radius: 6px; border: 1px solid #ccc;">
+      <textarea placeholder="Escribe tu reseña..." rows="4" style="width: 100%; padding: 0.8rem; border-radius: 6px; border: 1px solid #ccc; margin-bottom: 1rem;"></textarea>
+      <button type="submit" style="background-color: #03C4C4; color: white; border: none; padding: 0.8rem 1.5rem; font-weight: bold; border-radius: 6px; cursor: pointer;">Enviar Reseña</button>
+    </form>
+  </div>
+</section>
+
+<style>
+  header .translate-btn {
+    margin-right: 2rem !important;
+  }
+  #review-form div:hover {
+    transform: scale(1.02);
+  }
+</style>
+
+</body>
+</html>
